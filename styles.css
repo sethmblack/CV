@@ -56,11 +56,22 @@ section {
     padding: 0;
 }
 
-.skills-list li {
+.skill-item {
     background-color: #f3f2ef;
     padding: 5px 10px;
     margin: 5px 0;
     border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.skill-item:hover {
+    background-color: #e0e0e0;
+}
+
+.skill-item.active {
+    background-color: #0073b1;
+    color: #ffffff;
 }
 
 footer {
