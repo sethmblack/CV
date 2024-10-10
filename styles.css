@@ -54,24 +54,32 @@ section {
 .skills-list {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .skill-item {
-    background-color: #f3f2ef;
-    padding: 5px 10px;
-    margin: 5px 0;
-    border-radius: 5px;
+    background-color: #e1ecf4;
+    padding: 8px 12px;
+    margin: 5px;
+    border: 1px solid #0073b1;
+    border-radius: 20px;
+    color: #0073b1;
+    font-size: 0.9em;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 .skill-item:hover {
-    background-color: #e0e0e0;
+    background-color: #0073b1;
+    color: #ffffff;
 }
 
 .skill-item.active {
-    background-color: #0073b1;
+    background-color: #004a75;
     color: #ffffff;
+    border-color: #004a75;
 }
 
 footer {
